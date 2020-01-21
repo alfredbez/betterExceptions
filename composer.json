@@ -1,4 +1,14 @@
 {
+    "name": "abez/better-exceptions",
+    "description": "Displays full arguments in Exception Stacktraces",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "alfredbez",
+            "email": "alfred.bez@googlemail.com"
+        }
+    ],
     "require-dev": {
         "phpunit/phpunit": "^8.0"
     },

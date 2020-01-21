@@ -1,0 +1,10 @@
+<phpunit>
+    <testsuites>
+        <testsuite name="betterExceptions">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <ini name='zend.exception_ignore_args' value='Off' />
+    </php>
+</phpunit>

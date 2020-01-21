@@ -6,5 +6,8 @@
         "psr-4":{
             "AlfredBez\\BetterExceptions\\": "src/"
         }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
     }
 }

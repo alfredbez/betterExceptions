@@ -10,6 +10,18 @@ class ExceptionHandlerTest extends TestCase {
         throw new Exception();
     }
 
+    public function testFramesStartsWithZero()
+    {
+        try {
+            $this->throwDummyException(true);
+        } catch (Exception $exception) {
+            $handler = new ExceptionHandler();
+            $stacktrace = $handler->getTraceAsString($exception);
+
+            $this->assertStringStartsWith('#0', $stacktrace);
+        }
+    }
+
     public function testExceptionShowsFullParameters()
     {
         $argumentToCheck = 'This is a very long argument which should be cropped';
